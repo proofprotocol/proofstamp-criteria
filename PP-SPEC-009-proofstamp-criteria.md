@@ -1,3 +1,5 @@
+> **Zenodo DOI:** [10.5281/zenodo.21379780](https://doi.org/10.5281/zenodo.21379780) — Published 2026-07-15
+
 # PP-SPEC-009 · ProofStamp™ Certification Criteria
 
 **Document ID:** PP-SPEC-009  
