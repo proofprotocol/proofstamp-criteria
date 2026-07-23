@@ -1,5 +1,3 @@
-> **Zenodo DOI:** [10.5281/zenodo.21379780](https://doi.org/10.5281/zenodo.21379780) — Published 2026-07-15
-
 # PP-SPEC-009 · ProofStamp™ Certification Criteria
 
 **Document ID:** PP-SPEC-009  
@@ -49,9 +47,11 @@ ProofStamp™ is a certification mark. It is the legal and institutional signal 
 
 ProofStamp™ answers the question every buyer, auditor, and regulator needs answered: who watched the watcher?
 
-The answer is HACKERverse. An independent certifying authority with no commercial relationship to the vendor under test, no financial interest in the outcome, and no governance role in the body that sets the conformance criteria.
+The answer is structural. The certifying authority operates outside the trust boundary of the System Under Test's operator, and its compensation does not vary with the verdict. It does not sell products in the category it certifies.
 
-That structural independence is the moat. It cannot be replicated by any party that sells products in the category it certifies.
+Independence here is a structural position, not a claim of disinterest. Where the certifying authority holds a commercial relationship with the subject, contributed to authoring the conformance criteria, or holds more than one role in a given run, those facts MUST be disclosed in the certification record. Disclosure does not create independence. It makes the residual visible.
+
+That structural position cannot be replicated by any party that sells products in the category it certifies, nor by any body funded by the vendors it evaluates.
 
 ---
 
@@ -82,17 +82,23 @@ The benchmark run must have been witnessed by a qualified independent witness pe
 **3.3 NIST Beacon Pre-Execution Commitment**
 The test parameters must have been committed to a NIST Beacon pulse before execution began per PP-SPEC-008.
 
-**3.4 Minimum PES Score**
-The product must achieve a minimum Proof of Efficacy Score as defined by the applicable benchmark. The minimum score is benchmark-specific and published at proofbenchmark.com. A score without a declared denominator does not qualify.
+**3.4 Published Scores**
+The Report must carry `proof: true` and must publish the Containment Score and the Detection Score together, with the full case classification breakdown, the detected count, and all declared exclusions.
+
+There is no minimum score. ProofStamp™ certifies that the measurement was independently witnessed and pre-committed, not that the subject performed well. A certified Report carrying a low score is as valid as one carrying a high score, and both MUST be registered. Withholding certification from poor results would produce a registry containing only favourable outcomes, which is vendor benchmarking with cryptography applied.
+
+Buyers set their own thresholds. The certifying authority does not.
 
 **3.5 Full Threat Category Coverage**
 The benchmark run must cover the full enumerated threat category set for the domain without undisclosed exclusions per PP-SPEC-006.
 
-**3.6 No Commercial Relationship**
-HACKERverse must have no current commercial relationship with the vendor under test at the time of certification review.
+**3.6 Verdict-Invariant Compensation**
+The certifying authority's compensation MUST be identical whether the Report carries proof or not, and regardless of any score it carries. A fixed fee for certification is permitted and MUST be disclosed. Equity, resale margin, referral fees, success-contingent pricing, or any benefit varying with the outcome disqualifies the authority from certifying that subject.
+
+A commercial relationship does not disqualify. A commercial relationship whose value depends on the result does.
 
 **3.7 Methodology Review**
-HACKERverse must review and approve the execution methodology before issuing the stamp.
+The certifying authority must review and approve the execution methodology before issuing the stamp. Where the certifying authority also acted as Corpus Authority, Witness, or Scoring Authority for the run, each role held MUST be declared in the certification record.
 
 ---
 
