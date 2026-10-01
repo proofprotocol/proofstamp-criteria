@@ -182,6 +182,19 @@ There is no self-conformance mechanism for ProofStamp™. Conformance is determi
 
 ---
 
+## Extensions
+
+ProofStamp records and authorization metadata MAY use the universal Proof Protocol `extensions` mechanism defined by **PP-SPEC-001**. Extension keys MUST use globally distinguishable namespaces; reverse-domain notation is RECOMMENDED.
+
+Supplemental certification metadata MAY be namespaced. Extensions MUST NOT issue, confer, extend, renew, revoke, or alter ProofStamp certification or its normative eligibility requirements.
+
+A conforming implementation MUST be able to ignore an unknown extension and still evaluate this specification's core semantics. Extension-specific validation is supplemental and MUST remain distinguishable from core Proof Protocol conformance.
+
+> **Extensions enrich the object. They do not redefine the protocol.**
+
+---
+
+
 ## 10. Authors
 
 Craig Ellrod, Founder & CEO, Nebulonium, Inc. (d/b/a HACKERverse)  
